@@ -18,7 +18,6 @@ struct ListRowView: View {
         }
     }
 }
-
 struct ListRowView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
