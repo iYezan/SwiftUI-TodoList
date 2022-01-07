@@ -60,9 +60,9 @@
 		2CCE04EA2788E8430064FB3A /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
+				2CCE04EB2788E8430064FB3A /* TodoListApp.swift */,
 				2CCE05112788F8910064FB3A /* Library */,
 				2CCE05132788F8EF0064FB3A /* Screens */,
-				2CCE04EB2788E8430064FB3A /* TodoListApp.swift */,
 				2CCE04ED2788E8450064FB3A /* Assets.xcassets */,
 			);
 			path = TodoList;
