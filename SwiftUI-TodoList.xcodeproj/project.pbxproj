@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2CCE04FB2788E8450064FB3A /* TodoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCE04EB2788E8430064FB3A /* TodoListApp.swift */; };
-		2CCE04FC2788E8450064FB3A /* TodoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCE04EB2788E8430064FB3A /* TodoListApp.swift */; };
+		2CCE04FB2788E8450064FB3A /* SwiftUITodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCE04EB2788E8430064FB3A /* SwiftUITodoList.swift */; };
+		2CCE04FC2788E8450064FB3A /* SwiftUITodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCE04EB2788E8430064FB3A /* SwiftUITodoList.swift */; };
 		2CCE04FD2788E8450064FB3A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCE04EC2788E8430064FB3A /* ContentView.swift */; };
 		2CCE04FE2788E8450064FB3A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCE04EC2788E8430064FB3A /* ContentView.swift */; };
 		2CCE04FF2788E8450064FB3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CCE04ED2788E8450064FB3A /* Assets.xcassets */; };
@@ -20,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2CCE04EB2788E8430064FB3A /* TodoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListApp.swift; sourceTree = "<group>"; };
+		2CCE04EB2788E8430064FB3A /* SwiftUITodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITodoList.swift; sourceTree = "<group>"; };
 		2CCE04EC2788E8430064FB3A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2CCE04ED2788E8450064FB3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CCE04F22788E8450064FB3A /* SwiftUI-TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-TodoList.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,23 +47,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CB09CFF2789D56B00FF5BEF /* UserDefault */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UserDefault;
+			sourceTree = "<group>";
+		};
 		2CCE04E52788E8430064FB3A = {
 			isa = PBXGroup;
 			children = (
-				2CCE04EA2788E8430064FB3A /* SwiftUI-TodoList */,
+				2CCE04EA2788E8430064FB3A /* SwiftUITodoList */,
 				2CCE04F32788E8450064FB3A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2CCE04EA2788E8430064FB3A /* SwiftUI-TodoList */ = {
+		2CCE04EA2788E8430064FB3A /* SwiftUITodoList */ = {
 			isa = PBXGroup;
 			children = (
-				2CCE04EB2788E8430064FB3A /* TodoListApp.swift */,
+				2CCE04EB2788E8430064FB3A /* SwiftUITodoList.swift */,
 				2CCE05112788F8910064FB3A /* Library */,
 				2CCE05132788F8EF0064FB3A /* Screens */,
 				2CCE04ED2788E8450064FB3A /* Assets.xcassets */,
 			);
-			path = "SwiftUI-TodoList";
+			path = SwiftUITodoList;
 			sourceTree = "<group>";
 		};
 		2CCE04F32788E8450064FB3A /* Products */ = {
@@ -94,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				2CCE050D2788F7140064FB3A /* Models */,
+				2CB09CFF2789D56B00FF5BEF /* UserDefault */,
 				2CCE05142788F90D0064FB3A /* Helpers */,
 			);
 			path = Library;
@@ -240,7 +248,7 @@
 			files = (
 				2CCE050C2788ED3E0064FB3A /* AddView.swift in Sources */,
 				2CCE04FD2788E8450064FB3A /* ContentView.swift in Sources */,
-				2CCE04FB2788E8450064FB3A /* TodoListApp.swift in Sources */,
+				2CCE04FB2788E8450064FB3A /* SwiftUITodoList.swift in Sources */,
 				2CCE050A2788E8CA0064FB3A /* ListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,7 +259,7 @@
 			files = (
 				2CCE05102788F7440064FB3A /* AddView.swift in Sources */,
 				2CCE04FE2788E8450064FB3A /* ContentView.swift in Sources */,
-				2CCE04FC2788E8450064FB3A /* TodoListApp.swift in Sources */,
+				2CCE04FC2788E8450064FB3A /* SwiftUITodoList.swift in Sources */,
 				2CCE050F2788F7360064FB3A /* ListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
