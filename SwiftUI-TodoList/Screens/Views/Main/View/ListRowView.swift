@@ -11,7 +11,6 @@ struct ListRowView: View {
     
     let item: String
     var body: some View {
-        
         HStack {
             Text(item)
             Spacer()

@@ -23,9 +23,8 @@
 		2CCE04EB2788E8430064FB3A /* TodoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListApp.swift; sourceTree = "<group>"; };
 		2CCE04EC2788E8430064FB3A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2CCE04ED2788E8450064FB3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2CCE04F22788E8450064FB3A /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2CCE04F82788E8450064FB3A /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2CCE04FA2788E8450064FB3A /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		2CCE04F22788E8450064FB3A /* SwiftUI-TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-TodoList.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CCE04F82788E8450064FB3A /* SwiftUI-TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-TodoList.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CCE05092788E8CA0064FB3A /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
 		2CCE050B2788ED3E0064FB3A /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,13 +50,12 @@
 		2CCE04E52788E8430064FB3A = {
 			isa = PBXGroup;
 			children = (
-				2CCE04EA2788E8430064FB3A /* TodoList */,
-				2CCE04F92788E8450064FB3A /* macOS */,
+				2CCE04EA2788E8430064FB3A /* SwiftUI-TodoList */,
 				2CCE04F32788E8450064FB3A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2CCE04EA2788E8430064FB3A /* TodoList */ = {
+		2CCE04EA2788E8430064FB3A /* SwiftUI-TodoList */ = {
 			isa = PBXGroup;
 			children = (
 				2CCE04EB2788E8430064FB3A /* TodoListApp.swift */,
@@ -65,24 +63,16 @@
 				2CCE05132788F8EF0064FB3A /* Screens */,
 				2CCE04ED2788E8450064FB3A /* Assets.xcassets */,
 			);
-			path = TodoList;
+			path = "SwiftUI-TodoList";
 			sourceTree = "<group>";
 		};
 		2CCE04F32788E8450064FB3A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2CCE04F22788E8450064FB3A /* TodoList.app */,
-				2CCE04F82788E8450064FB3A /* TodoList.app */,
+				2CCE04F22788E8450064FB3A /* SwiftUI-TodoList.app */,
+				2CCE04F82788E8450064FB3A /* SwiftUI-TodoList.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		2CCE04F92788E8450064FB3A /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				2CCE04FA2788E8450064FB3A /* macOS.entitlements */,
-			);
-			path = macOS;
 			sourceTree = "<group>";
 		};
 		2CCE050D2788F7140064FB3A /* Models */ = {
@@ -153,9 +143,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2CCE04F12788E8450064FB3A /* TodoList (iOS) */ = {
+		2CCE04F12788E8450064FB3A /* SwiftUI-TodoList (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2CCE05032788E8450064FB3A /* Build configuration list for PBXNativeTarget "TodoList (iOS)" */;
+			buildConfigurationList = 2CCE05032788E8450064FB3A /* Build configuration list for PBXNativeTarget "SwiftUI-TodoList (iOS)" */;
 			buildPhases = (
 				2CCE04EE2788E8450064FB3A /* Sources */,
 				2CCE04EF2788E8450064FB3A /* Frameworks */,
@@ -165,14 +155,14 @@
 			);
 			dependencies = (
 			);
-			name = "TodoList (iOS)";
+			name = "SwiftUI-TodoList (iOS)";
 			productName = "TodoList (iOS)";
-			productReference = 2CCE04F22788E8450064FB3A /* TodoList.app */;
+			productReference = 2CCE04F22788E8450064FB3A /* SwiftUI-TodoList.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2CCE04F72788E8450064FB3A /* TodoList (macOS) */ = {
+		2CCE04F72788E8450064FB3A /* SwiftUI-TodoList (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2CCE05062788E8450064FB3A /* Build configuration list for PBXNativeTarget "TodoList (macOS)" */;
+			buildConfigurationList = 2CCE05062788E8450064FB3A /* Build configuration list for PBXNativeTarget "SwiftUI-TodoList (macOS)" */;
 			buildPhases = (
 				2CCE04F42788E8450064FB3A /* Sources */,
 				2CCE04F52788E8450064FB3A /* Frameworks */,
@@ -182,9 +172,9 @@
 			);
 			dependencies = (
 			);
-			name = "TodoList (macOS)";
+			name = "SwiftUI-TodoList (macOS)";
 			productName = "TodoList (macOS)";
-			productReference = 2CCE04F82788E8450064FB3A /* TodoList.app */;
+			productReference = 2CCE04F82788E8450064FB3A /* SwiftUI-TodoList.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -205,7 +195,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2CCE04E92788E8430064FB3A /* Build configuration list for PBXProject "TodoList" */;
+			buildConfigurationList = 2CCE04E92788E8430064FB3A /* Build configuration list for PBXProject "SwiftUI-TodoList" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -218,8 +208,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2CCE04F12788E8450064FB3A /* TodoList (iOS) */,
-				2CCE04F72788E8450064FB3A /* TodoList (macOS) */,
+				2CCE04F12788E8450064FB3A /* SwiftUI-TodoList (iOS) */,
+				2CCE04F72788E8450064FB3A /* SwiftUI-TodoList (macOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -402,7 +392,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.iyezanApp.TodoList;
-				PRODUCT_NAME = TodoList;
+				PRODUCT_NAME = "SwiftUI-TodoList";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -432,7 +422,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.iyezanApp.TodoList;
-				PRODUCT_NAME = TodoList;
+				PRODUCT_NAME = "SwiftUI-TodoList";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -462,7 +452,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.iyezanApp.TodoList;
-				PRODUCT_NAME = TodoList;
+				PRODUCT_NAME = "SwiftUI-TodoList";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -490,7 +480,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.iyezanApp.TodoList;
-				PRODUCT_NAME = TodoList;
+				PRODUCT_NAME = "SwiftUI-TodoList";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -500,7 +490,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2CCE04E92788E8430064FB3A /* Build configuration list for PBXProject "TodoList" */ = {
+		2CCE04E92788E8430064FB3A /* Build configuration list for PBXProject "SwiftUI-TodoList" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2CCE05012788E8450064FB3A /* Debug */,
@@ -509,7 +499,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2CCE05032788E8450064FB3A /* Build configuration list for PBXNativeTarget "TodoList (iOS)" */ = {
+		2CCE05032788E8450064FB3A /* Build configuration list for PBXNativeTarget "SwiftUI-TodoList (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2CCE05042788E8450064FB3A /* Debug */,
@@ -518,7 +508,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2CCE05062788E8450064FB3A /* Build configuration list for PBXNativeTarget "TodoList (macOS)" */ = {
+		2CCE05062788E8450064FB3A /* Build configuration list for PBXNativeTarget "SwiftUI-TodoList (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2CCE05072788E8450064FB3A /* Debug */,
