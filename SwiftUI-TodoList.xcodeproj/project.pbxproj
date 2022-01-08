@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CB09D06278A072500FF5BEF /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB09D05278A072500FF5BEF /* ItemModel.swift */; };
+		2CB09D08278A089700FF5BEF /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB09D07278A089700FF5BEF /* ListViewModel.swift */; };
 		2CCE04FB2788E8450064FB3A /* SwiftUITodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCE04EB2788E8430064FB3A /* SwiftUITodoList.swift */; };
 		2CCE04FC2788E8450064FB3A /* SwiftUITodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCE04EB2788E8430064FB3A /* SwiftUITodoList.swift */; };
 		2CCE04FD2788E8450064FB3A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCE04EC2788E8430064FB3A /* ContentView.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2CB09D05278A072500FF5BEF /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		2CB09D07278A089700FF5BEF /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		2CCE04EB2788E8430064FB3A /* SwiftUITodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITodoList.swift; sourceTree = "<group>"; };
 		2CCE04EC2788E8430064FB3A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2CCE04ED2788E8450064FB3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,11 +51,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2CB09CFF2789D56B00FF5BEF /* UserDefault */ = {
+		2CB09D02278A06DC00FF5BEF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2CB09D05278A072500FF5BEF /* ItemModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2CB09D03278A06ED00FF5BEF /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = UserDefault;
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2CB09D04278A070A00FF5BEF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2CB09D07278A089700FF5BEF /* ListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		2CCE04E52788E8430064FB3A = {
@@ -82,17 +102,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2CCE050D2788F7140064FB3A /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		2CCE050E2788F71C0064FB3A /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				2CCE05152788F93F0064FB3A /* Main */,
+				2CB09D04278A070A00FF5BEF /* ViewModel */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -100,18 +114,10 @@
 		2CCE05112788F8910064FB3A /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				2CCE050D2788F7140064FB3A /* Models */,
-				2CB09CFF2789D56B00FF5BEF /* UserDefault */,
-				2CCE05142788F90D0064FB3A /* Helpers */,
+				2CB09D02278A06DC00FF5BEF /* Models */,
+				2CB09D03278A06ED00FF5BEF /* Helpers */,
 			);
 			path = Library;
-			sourceTree = "<group>";
-		};
-		2CCE05122788F8B50064FB3A /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		2CCE05132788F8EF0064FB3A /* Screens */ = {
@@ -122,18 +128,10 @@
 			path = Screens;
 			sourceTree = "<group>";
 		};
-		2CCE05142788F90D0064FB3A /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
 		2CCE05152788F93F0064FB3A /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				2CCE05172788F9C90064FB3A /* View */,
-				2CCE05122788F8B50064FB3A /* ViewModel */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -246,7 +244,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CB09D06278A072500FF5BEF /* ItemModel.swift in Sources */,
 				2CCE050C2788ED3E0064FB3A /* AddView.swift in Sources */,
+				2CB09D08278A089700FF5BEF /* ListViewModel.swift in Sources */,
 				2CCE04FD2788E8450064FB3A /* ContentView.swift in Sources */,
 				2CCE04FB2788E8450064FB3A /* SwiftUITodoList.swift in Sources */,
 				2CCE050A2788E8CA0064FB3A /* ListRowView.swift in Sources */,

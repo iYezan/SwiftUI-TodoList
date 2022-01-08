@@ -12,16 +12,18 @@ struct ContentView: View {
         
         NavigationView {
             ZStack {
-                List {
-                    ListRowView(item: "Item")
-                        .padding()
+                VStack {
+                    List {
+                        ListRowView(item: "Item")
+                            .padding()
+                    }
                 }
+                .navigationTitle("Todo...")
+                .navigationBarItems(
+                    trailing:
+                        NavigationLink("Add", destination: AddView())
+                )
             }
-            .navigationTitle("Todo...")
-            .navigationBarItems(
-                trailing:
-                    NavigationLink("Add", destination: AddView())
-            )
         }
     }
 }
