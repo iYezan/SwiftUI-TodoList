@@ -1,5 +1,4 @@
 # SwiftUI-TodoList
-This project uses MVVM architecture and UserDefaults to persist data.
 
 ```
 |
