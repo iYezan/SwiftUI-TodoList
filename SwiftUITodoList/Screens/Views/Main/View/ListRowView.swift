@@ -9,10 +9,10 @@ import SwiftUI
 
 struct ListRowView: View {
     
-    let item: String
+    let item: ItemModel
     var body: some View {
         HStack {
-            Text(item)
+            Text(item.title)
             Spacer()
         }
     }
@@ -20,7 +20,7 @@ struct ListRowView: View {
 struct ListRowView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ListRowView(item: "Item")
+            ListRowView(item: ItemModel(title: "Item 1"))
         }
         .previewLayout(.sizeThatFits)
     }

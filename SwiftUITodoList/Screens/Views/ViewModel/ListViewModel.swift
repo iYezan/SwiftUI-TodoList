@@ -16,6 +16,7 @@ class ListViewModel: ObservableObject {
     }
     
     let itemKey: String = "items"
+    
     init() {
         getItems()
     }

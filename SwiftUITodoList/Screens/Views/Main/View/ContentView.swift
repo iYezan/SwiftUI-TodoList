@@ -8,31 +8,38 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    // 1
+    @EnvironmentObject var listViewModel: ListViewModel
+    
     var body: some View {
-        
-        NavigationView {
-            ZStack {
-                VStack {
-                    List {
-                        ListRowView(item: "Item")
-                            .padding()
-                    }
+        VStack {
+            List {
+                ForEach(listViewModel.items) { item in
+                    // ListRowView 2
+                    ListRowView(item: item)
+                        .padding()
                 }
-                .navigationTitle("Todo...")
-                .navigationBarItems(
-                    trailing:
-                        NavigationLink("Add", destination: AddView())
-                )
+                .onDelete(perform: listViewModel.deleteItem)
+                .onMove(perform: listViewModel.moveItem)
             }
+            .navigationTitle("Todo...")
+            .navigationBarItems(
+                trailing:
+                    NavigationLink("Add", destination: AddView(addViewModel: AddViewModel()))
+            )
+        }
+        .onAppear {
+            listViewModel.getItems()
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
         NavigationView {
             ContentView()
         }
+        .environmentObject(ListViewModel())
     }
 }

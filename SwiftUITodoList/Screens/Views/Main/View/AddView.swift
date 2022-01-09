@@ -9,33 +9,54 @@ import SwiftUI
 
 struct AddView: View {
     
-    @State var textFieldText: String = ""
+    @Environment(\.presentationMode) private var presentationMode
+    @EnvironmentObject var listViewModel: ListViewModel
+    @State var addViewModel: AddViewModel
+    
+    // MARK: BODY
     
     var body: some View {
-        ZStack {
-            VStack {
+        
+        VStack(spacing: 100) {
+            TextField("Type something here...", text: $addViewModel.textFieldText)
+                .padding(.horizontal)
+                .frame(height: 55)
+                .background(Color(UIColor.secondarySystemBackground))
+                .cornerRadius(10)
             
-                TextField("Type something here.", text: $textFieldText)
-                    .padding(.horizontal)
+            Button(action: addViewModel.saveButtonPressed, label: {
+                Text("Save".uppercased())
+                    .foregroundColor(.white)
+                    .font(.headline)
                     .frame(height: 55)
-                    .background(Color(UIColor.secondarySystemBackground))
+                    .frame(maxWidth: .infinity)
+                    .background(Color.red)
                     .cornerRadius(10)
-                Spacer()
-                Button("Save") {
-                    //                Text("Save".uppercased())
-                }
-                Spacer(minLength: 200)
+            })
+        }
+    
+        
+        .onReceive(addViewModel.viewDismissalModePublisher) { shouldDismiss in
+            if shouldDismiss {
+                self.presentationMode.wrappedValue.dismiss()
             }
         }
+        .navigationTitle("Add an Item")
     }
 }
+
+
+// MARK: PREVIEW
 
 struct AddView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             NavigationView {
-                AddView()
+                AddView(addViewModel: AddViewModel())
             }
+            
+            .environmentObject(ListViewModel())
+            
         }
     }
 }

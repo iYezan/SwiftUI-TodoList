@@ -8,6 +8,7 @@
 import Foundation
 
 struct ItemModel: Codable, Identifiable {
+    // MARK: PROPERTIES
     var id = UUID()
     let title: String
     
