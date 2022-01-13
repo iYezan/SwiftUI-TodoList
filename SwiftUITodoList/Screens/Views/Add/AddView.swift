@@ -13,8 +13,6 @@ struct AddView: View {
     @EnvironmentObject var listViewModel: ListViewModel
     @State var addViewModel: AddViewModel
     
-    // MARK: BODY
-    
     var body: some View {
         
         VStack(spacing: 100) {
@@ -45,18 +43,13 @@ struct AddView: View {
     }
 }
 
-
-// MARK: PREVIEW
-
 struct AddView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             NavigationView {
                 AddView(addViewModel: AddViewModel())
             }
-            
             .environmentObject(ListViewModel())
-            
         }
     }
 }

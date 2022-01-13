@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C8233CE278FACCC00AD1DC1 /* AddViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB09D09278A165F00FF5BEF /* AddViewModel.swift */; };
+		2C8233CF278FACFC00AD1DC1 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB09D07278A089700FF5BEF /* ListViewModel.swift */; };
 		2CB09D06278A072500FF5BEF /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB09D05278A072500FF5BEF /* ItemModel.swift */; };
 		2CB09D08278A089700FF5BEF /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB09D07278A089700FF5BEF /* ListViewModel.swift */; };
 		2CB09D0A278A165F00FF5BEF /* AddViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB09D09278A165F00FF5BEF /* AddViewModel.swift */; };
@@ -53,6 +55,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C8233CA278FAB4500AD1DC1 /* ListRow */ = {
+			isa = PBXGroup;
+			children = (
+				2CCE05092788E8CA0064FB3A /* ListRowView.swift */,
+			);
+			path = ListRow;
+			sourceTree = "<group>";
+		};
+		2C8233CC278FABAB00AD1DC1 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				2CCE050B2788ED3E0064FB3A /* AddView.swift */,
+				2CB09D09278A165F00FF5BEF /* AddViewModel.swift */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
 		2CB09D02278A06DC00FF5BEF /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -66,15 +85,6 @@
 			children = (
 			);
 			path = Helpers;
-			sourceTree = "<group>";
-		};
-		2CB09D04278A070A00FF5BEF /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				2CB09D07278A089700FF5BEF /* ListViewModel.swift */,
-				2CB09D09278A165F00FF5BEF /* AddViewModel.swift */,
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		2CCE04E52788E8430064FB3A = {
@@ -108,8 +118,9 @@
 		2CCE050E2788F71C0064FB3A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2CCE05152788F93F0064FB3A /* Main */,
-				2CB09D04278A070A00FF5BEF /* ViewModel */,
+				2CCE05172788F9C90064FB3A /* Main */,
+				2C8233CA278FAB4500AD1DC1 /* ListRow */,
+				2C8233CC278FABAB00AD1DC1 /* Add */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -131,22 +142,13 @@
 			path = Screens;
 			sourceTree = "<group>";
 		};
-		2CCE05152788F93F0064FB3A /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				2CCE05172788F9C90064FB3A /* View */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		2CCE05172788F9C90064FB3A /* View */ = {
+		2CCE05172788F9C90064FB3A /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				2CCE04EC2788E8430064FB3A /* ContentView.swift */,
-				2CCE05092788E8CA0064FB3A /* ListRowView.swift */,
-				2CCE050B2788ED3E0064FB3A /* AddView.swift */,
+				2CB09D07278A089700FF5BEF /* ListViewModel.swift */,
 			);
-			path = View;
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +265,9 @@
 			files = (
 				2CCE05102788F7440064FB3A /* AddView.swift in Sources */,
 				2CCE04FE2788E8450064FB3A /* ContentView.swift in Sources */,
+				2C8233CF278FACFC00AD1DC1 /* ListViewModel.swift in Sources */,
 				2CCE04FC2788E8450064FB3A /* SwiftUITodoList.swift in Sources */,
+				2C8233CE278FACCC00AD1DC1 /* AddViewModel.swift in Sources */,
 				2CCE050F2788F7360064FB3A /* ListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
