@@ -1,4 +1,4 @@
-# SwiftUI-TodoList
+# Project Structure
 
 ```
 |
