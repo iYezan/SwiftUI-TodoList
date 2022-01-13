@@ -11,10 +11,15 @@
 |
 ├── Screens
 |   |
-|   ├── view
-|   │   ├── main                   # Main root folder
-|   |   │   ├── view               # SwiftUI ListRowView
-|   |   │   └── viewmodel          # ViewModel for ToDoList
+|   ├── Views
+|   │   ├── Main                   # Main root folder
+|   |   │   ├── view               # ContentView
+|   |   │   └── listViewModel      # ListViewModel for UserDefaults
+|   │   ├── ListRow                # ListRow root folder
+|   |   │   ├── listRow            # ListRowView
+|   │   ├── Add                    # Add root folder
+|   |   │   ├── addView            # AddView
+|   |   │   └── addViewModel       # AddViewModel for AddView
 ```
 
 # FEATURES
