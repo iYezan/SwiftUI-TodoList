@@ -17,7 +17,12 @@
 |   |   │   └── viewmodel          # ViewModel for ToDoList
 ```
 
-# Screenshots
+# FEATURES
 
-![01](https://user-images.githubusercontent.com/29463442/149242260-fbc47410-a197-4be1-8a29-a699f872ffd6.png)
-![02](https://user-images.githubusercontent.com/29463442/149242269-073b57c4-47b6-4340-ad32-d59a664e052d.png)
+- SWIFTUI
+- MVVM
+
+# A sample app to illustrate the MVVM in iOS apps with SwiftUI
+
+<img src="https://user-images.githubusercontent.com/29463442/149243567-eeb3f520-4f1f-4725-8ea4-8d39ce69bf07.png" width="300" height="600"> &nbsp; <img src="https://user-images.githubusercontent.com/29463442/149243816-48fba83c-6d69-4a1f-a4c5-2866970361e0.png" width="300" height="600">
+
