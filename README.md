@@ -6,7 +6,6 @@
 |
 ├── Library
 |   ├── Models                    # ItemModel
-|   ├── UserDefault               # Data Persistence
 |   ├── Helpers                   # All extension functions + CustomView
 |
 ├── Screens
@@ -14,9 +13,9 @@
 |   ├── Views
 |   │   ├── Main                   # Main root folder
 |   |   │   ├── view               # ContentView
-|   |   │   └── listViewModel      # ListViewModel for UserDefaults
 |   │   ├── ListRow                # ListRow root folder
 |   |   │   ├── listRow            # ListRowView
+|   |   │   └── listRowModel       # ListRowModel for UserDefaults
 |   │   ├── Add                    # Add root folder
 |   |   │   ├── addView            # AddView
 |   |   │   └── addViewModel       # AddViewModel for AddView
